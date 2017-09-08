@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         if label.text != "" && sender.tag != 16 {
             
      previousNumber = Double(label.text!)!
+         /*
             if sender.tag == 12
             {
                 label.text = "/"
@@ -49,11 +50,12 @@ class ViewController: UIViewController {
 
             }
 
-            else if sender.tag == 14 {
+            else if sender.tag == 15 {
                 label.text = "+"
             }
             
-            else if sender.tag == 17 {
+ */
+       if sender.tag == 17 {
                 
                 label.text = String(Double(label.text!)! / 100 )
                 
@@ -85,15 +87,14 @@ class ViewController: UIViewController {
                 label.text = String(previousNumber + numbersOnScreen)
             }
             
-            if operation == 15 {
-                label.text = String(previousNumber + numbersOnScreen)
+            
             }
 
             
         }
         
         
-    }
+
 
     
     @IBAction func clearButton(_ sender: UIButton) {
